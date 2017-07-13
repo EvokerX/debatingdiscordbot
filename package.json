@@ -1,0 +1,21 @@
+{
+  "name": "debatingdiscord",
+  "version": "0.0.1",
+  "description": "Bot for Debating Discord",
+  "main": "debate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "isprofanity": "^1.4.1",
+    "komada": "^0.19.7",
+    "mysql": "^2.13.0",
+    "node-cron": "^1.2.0",
+    "path": "^0.12.7",
+    "querystring": "^0.2.0",
+    "string-similarity": "^1.2.0"
+  }
+}

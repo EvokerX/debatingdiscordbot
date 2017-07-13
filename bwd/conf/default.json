@@ -1,0 +1,54 @@
+{
+  "prefix": {
+    "type": "String",
+    "data": "~"
+  },
+  "disabledCommands": {
+    "type": "Array",
+    "data": []
+  },
+  "modRole": {
+    "type": "String",
+    "data": "Mods"
+  },
+  "adminRole": {
+    "type": "String",
+    "data": "Devs"
+  },
+  "lang": {
+    "type": "String",
+    "data": "en"
+  },
+  "disciplineChannel": {
+    "type": "String",
+    "data": "0"
+  },
+  "historyChannel": {
+    "type": "String",
+    "data": "0"
+  },
+  "generalChannel": {
+    "type": "String",
+    "data": "0"
+  },
+  "staffChannel": {
+    "type": "String",
+    "data": "0"
+  },
+  "profanityFilter": {
+    "type": "Boolean",
+    "data": true
+  },
+  "profanitySureness": {
+    "type": "Number",
+    "data": 0.9
+  },
+  "antispamGuild": {
+    "type": "Boolean",
+    "data": true
+  },
+  "antispamIgnoreChannels": {
+    "type": "Array",
+    "data": []
+  }
+}
