@@ -32,7 +32,7 @@ client.funcs.database.query('SELECT * FROM cron WHERE task LIKE ? AND parameter 
                          if (result.length > 0)
                          {
                          console.log('---RE-JAILING user ' + member.user.id);
-                         member.setRoles(['329390031955296258']); //Offender role
+                         member.setRoles(['313101366996369408']); //Offender role
                          
                          // Let us know someone was re-jailed.
                          if (historychannel)

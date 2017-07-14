@@ -253,13 +253,6 @@ function antispam_heuristics_step5(client, msg, method, deleteit, totalscore, sc
 function antispam_trigger_step2(client, msg, score)
 {
 							console.log('---ANTISPAM JAIL TRIGGERED for user ' + msg.author.id);
-                                 /* TO BE WORKED ON
-
-	client.funcs.database.query('INSERT INTO cron (task, parameter, timestamp) VALUES (?, ?, (CAST(UNIX_TIMESTAMP() AS UNSIGNED) + ?))', ['unjail', msg.author.id, null],
-								function (err, result, fields) {
-									if (err) throw err;
-									else {
-                                 */
 										// Post messages in history and discipline channels
 										let historychannel = client.channels.get(msg.guildConf.historyChannel.replace(/[^\/\d]/g,''));
 										let disciplinechannel = client.channels.get(msg.guildConf.disciplineChannel.replace(/[^\/\d]/g,''));
@@ -287,8 +280,4 @@ function antispam_trigger_step2(client, msg, score)
 										}});
 										console.log('---Message sent to the logs channel.');
 										}
-/*
-						}
-				});
-*/
 }
