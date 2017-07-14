@@ -129,6 +129,13 @@ client.funcs.database.query('SELECT * FROM cron WHERE task LIKE ? OR (`timestamp
                          }
         }
 });
+
+// Delete chat log records older than 15 minutes automatically for privacy reasons. Antispam does not need them anymore at this point.
+console.log('---Clearing messages from database older than 15 minutes...');
+client.funcs.database.query('DELETE FROM chatlogs WHERE (CAST(UNIX_TIMESTAMP() AS UNSIGNED) - ?) > `timestamp`', [(60 * 15)],
+function (err, result, fields) {
+if (err) throw err;
+});
 });
 }
 
